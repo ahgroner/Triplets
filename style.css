@@ -1,0 +1,111 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Hairline.ttf);
+}
+*{
+	font-family: lato;
+}
+body{margin: 0px;}
+#progress
+{
+	height:20px;
+	width: 20px;
+	position: absolute;
+	background:white;
+}
+
+#board
+{
+	background: #2C2C2C;
+	height: 1334px;
+	width: 750px;
+	position: relative;
+	display: none;
+}
+#home
+{
+	background: #2C2C2C;
+	height: 1334px;
+	width: 750px;
+	position: relative;
+}
+
+#home #play_button{
+    color: white;
+    border-radius: 100px;
+    height: 100px;
+    font-size: 80px;
+    border: 1px solid white;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    width: 64%;
+    left: 18%;
+}
+#home #tutorial_button{
+	color:#EFB44B;
+}
+
+.card
+{
+	height:200px;
+	width: 200px;
+	border-radius: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.card svg
+{
+	position: relative;
+	left:0px;
+	top:0px;
+}
+.color1 g
+{
+	stroke:#EFB44B;
+	fill:#EFB44B;
+}
+.color2 g
+{
+	stroke:#A33BE0;
+	fill:#A33BE0;
+}
+.color3 g
+{
+	stroke:#5CDE7E;
+	fill:#5CDE7E;
+}
+.push
+{
+	width: 100%;
+	background:blue;
+	height: auto;
+}
+
+.fill1 g .shape{fill-opacity:0;}
+.fill2 g .shape{fill-opacity:.4;}
+.fill3 g .shape{fill-opacity:1;}
+
+.card svg
+{
+	border-radius:10px;
+}
+
+.card.selected svg
+{
+   -moz-box-shadow:    inset 0 0 20px  white;
+   -webkit-box-shadow: inset 0 0 20px white;
+   box-shadow:         inset 0 0 20px white;}
+
+#column1{left:0;}
+#column2{left:250;}
+#column3{left:500;}
+
+.column{
+	height: 100%;
+	width: 250px;
+	padding-left: 20px;
+	position: absolute;
+	display: flex;
+	flex-direction:column-reverse;
+}

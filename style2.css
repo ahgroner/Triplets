@@ -1,0 +1,100 @@
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato/Lato-Hairline.ttf);
+}
+#progress
+{
+	height:20px;
+	width: 20px;
+	position: absolute;
+	background:white;
+}
+
+#board
+{
+	background: #222;
+	height: 1334px;
+	width: 750px;
+	position: relative;
+}
+.card
+{
+	height:200px;
+	width: 200px;
+	border: 1px solid #222;
+	border-radius: 20px;
+	padding-bottom: 20px;
+}
+.eye
+{
+	fill:white;
+	stroke-width:16px;
+}
+.pupil
+{
+	fill:#5d5d5d;
+}
+.color1 g
+{
+	stroke:#EFB44B;
+	fill:#EFB44B;
+}
+.color2 g
+{
+	stroke:#A33BE0;
+	fill:#A33BE0;
+}
+.color3 g
+{
+	stroke:#35DB60;
+	fill:#35DB60;
+}
+.color1 .mouth{stroke:#EFB44B;}
+.color2 .mouth{stroke:#A33BE0;}
+.color3 .mouth{stroke:#35DB60;}
+
+.mouth{
+	fill:#222;
+	stroke-width:21;
+}
+.mouth.open
+{
+	fill:none;
+}
+
+.color1 .back{stroke:#efd2a8; fill:#efd2a8;}
+.color2 .back{stroke:#b990dd; fill:#b990dd;}
+.color3 .back{stroke:#b1ddba; fill:#b1ddba;}
+
+.push
+{
+	width: 100%;
+	background:blue;
+	height: auto;
+}
+.color1 .eyes .eye{	stroke:#efc581;}
+.color2 .eyes .eye{	stroke:#ae73d8;}
+.color3 .eyes .eye{	stroke:#a2ddb0;}
+
+.fill1 g .shape{fill-opacity:0;}
+.fill2 g .shape{fill-opacity:.4;}
+.fill3 g .shape{fill-opacity:1;}
+
+.card.selected
+{
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+
+#column1{left:0;}
+#column2{left:250;}
+#column3{left:500;}
+
+.column{
+	height: 100%;
+	width: 250px;
+	padding-left: 20px;
+	position: absolute;
+	display: flex;
+	flex-direction:column-reverse;
+}
